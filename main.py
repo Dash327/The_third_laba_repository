@@ -5,8 +5,8 @@ def main():
         root.geometry("400x450")
         root.resizable(True, True)
 
-        game = TicTacToeGame(root)
-        menu = MenuBar(root, game)
+        game = control_unit(root)
+        menu = navbar(root, game)
 
         # Запуск первой игры
         game.reset_game()
