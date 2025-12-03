@@ -3,6 +3,10 @@ from tkinter import ttk
 from tkinter import messagebox
 
 
+from control_unit import TicTacToeGame
+from navbar import MenuBar
+
+
 def main():
     try:
         root = tk.Tk()
@@ -10,8 +14,8 @@ def main():
         root.geometry("400x450")
         root.resizable(True, True)
 
-        game = control_unit(root)
-        menu = navbar(root, game)
+        game = TicTacToeGame(root)
+        menu = MenuBar(root, game)
 
         # Запуск первой игры
         game.reset_game()
