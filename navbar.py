@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 
 
 class MenuBar:
-    def __init__(self, root, game: control_unit):
+    def __init__(self, root, game):
         self.root = root
         self.game = game
         self.create_menu()
